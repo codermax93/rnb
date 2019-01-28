@@ -699,7 +699,8 @@ p.range span:after {
     color: #ffffff;
 }
 
-.interesting-offer-static_btn:hover {
+.interesting-offer-static_btn:hover,
+.interesting-offer-static_btn:focus {
     text-decoration: none;
     color: #fff;
 }
@@ -765,6 +766,7 @@ p.range span:after {
     color: #878a8f;
     padding: 10px 5px;
     border: 0px;
+    border-radius: 0;
     border-bottom: 2px solid #a4a7b7;
 }
 
@@ -1088,6 +1090,7 @@ p.range span:after {
     padding: 25px 36px;
     background: #0a9ad6;
     border: 1px solid #0a9ad6;
+    text-align: center;
 }
 
 .block-credit-calculator-form-btn a:hover {
@@ -1379,7 +1382,7 @@ input[type=range]::-ms-thumb {
 
 .send-data-item {
     float: left;
-    width: 50%;
+    width: 100%;
     padding:0 10px;
     margin-bottom: 60px;
 }
@@ -1390,25 +1393,33 @@ input[type=range]::-ms-thumb {
 
 .send-data-item .form-control {
     border: 0;
+    border-radius: 0;
     box-shadow: inset 0 0 0 transparent;
+    -moz-box-shadow: inset 0 0 0 transparent;
+    -webkit-box-shadow: inset 0 0 0 transparent;
     border-bottom: 1px solid #ccc;
     font-size: 18px;
     color: #878a8f;
     font-family: 'Circe Light';
-    padding-left: 0;
+    padding: 0;
     text-transform: uppercase;
+    -webkit-appearance: none;
+    height: 27px;
 }
 
 .send-data-list {
     padding: 0 20px;
     list-style: none;
-    width: 100%;
+    float: left;
+    width: 50%;
 }
 
 .send-data-input {
     border: 0;
+    border-radius: 0;
     border-bottom: 1px solid #ccc;
     width: 100%;
+    height: 27px;
 }
 
 .send-data-input::placeholder {
@@ -1436,4 +1447,8 @@ input[type=range]::-ms-thumb {
 .send-modal-content {
     box-shadow: 0 0 0 transparent;
     border-radius: 0;
+}
+
+.modal-header .close {
+    margin-top: -15px;
 }
