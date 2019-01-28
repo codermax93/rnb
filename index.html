@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="libs/bxslider-4-4.2.12/jquery.bxslider.css">
@@ -375,27 +375,27 @@
                     <form action="" class="block-credit-calculator_form">
                         <span class="block-credit-calculator_title">Кредитный калькулятор</span>
                         <div class="block-credit-calculator-form-content">
-                            <div>
-                                <div >
-                                    <span>
+                            <div class="credit-calc-block">
+                                <div class="credit-sum">
+                                    <span class="credit-block credit-title">
                                         Сумма, руб.
                                     </span>
-                                    <input type="text" id="range-02-text">
+                                    <input type="text" id="range-02-text" class="credit-block">
                                 </div>
                                 <div>
                                     <input type="text" id="range-02" value="" name="range" />
                                 </div>
                             </div>
 
-                            <div>
-                                <div>
-                                    <span>
+                            <div class="credit-calc-block">
+                                <div class="credit-sum">
+                                    <span class="credit-block credit-title">
                                         Срок, мес.
                                     </span>
-                                    <input type="text" id="range-03-text">
+                                    <input type="text" id="range-03-text" class="credit-block">
                                 </div>
                                 <div>
-                                    <input type="text" id="range-03" value="" name="range" />
+                                    <input type="text" id="range-03" value="" name="range" class="credit-block" />
                                 </div>
                             </div>
                         </div>
@@ -404,8 +404,12 @@
                             <span class="block-credit-calculator-form-btn_text">
                                 ЕЖЕМЕСЯЧНЫЙ ПЛАТЕЖ
                             </span>
-                            <span id="range-calc" class="block-credit-calculator-form-btn_sum"></span>
-                            <span>руб.</span>
+
+                            <div class="range-result">
+                                <span id="range-calc" class="block-credit-calculator-form-btn_sum"></span>
+                                <span>руб.</span>
+                            </div>
+
                             <a href="#" data-toggle="modal" data-target="#send-app-calc">ОФОРМИТЬ КРЕДИТ</a>
                         </div>
                     </form>

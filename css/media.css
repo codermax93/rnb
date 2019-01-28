@@ -317,7 +317,7 @@
         font-size: 36px;
     }
     .block-credit-calculator-form-content input {
-        max-width: 460px;
+        max-width: 50%;
         width: 100%;
     }
     .block-credit-calculator-form-btn_text {
@@ -720,7 +720,6 @@
         font-size: 24px;
     }
     .block-credit-calculator-form-content input {
-        max-width: 460px;
         width: 100%;
     }
     .block-credit-calculator-form-btn_text {
@@ -888,7 +887,7 @@
         margin-top: -15px;
     }
     .modal-content {
-        height: 100vh;
+        height: 100%;
     }
     .block-requirements .tab-content {
         padding: 0 7%;

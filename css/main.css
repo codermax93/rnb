@@ -1018,10 +1018,10 @@ p.range span:after {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
 }
 
 .block-credit-calculator_title {
@@ -1041,11 +1041,16 @@ p.range span:after {
 }
 
 .block-credit-calculator-form-content input {
+    pointer-events: none;
     max-width: 467px;
     width: 100%;
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     position: relative;
+    border: none;
+    text-align: right;
+    float: right;
+    line-height: 1;
 }
 
 .block-credit-calculator-form_text {
@@ -1088,7 +1093,7 @@ p.range span:after {
 .block-credit-calculator-form-btn {
     max-width: 410px;
     width: 100%;
-    margin-top: -50px;
+    margin-top: 25px;
 }
 
 .block-credit-calculator-form-btn a {
@@ -1116,8 +1121,8 @@ p.range span:after {
 }
 
 .block-credit-calculator-form-btn_sum {
-    margin-bottom: 60px;
-    display: block;
+    margin-bottom: 100px;
+    display: inline-block;
     font-family: 'Gilroy Semibold';
     font-size: 38px;
     color: #000000;
@@ -1355,9 +1360,9 @@ input[type=range]::-ms-thumb {
     -webkit-justify-content: space-around;
     -ms-flex-pack: justify;
     justify-content: space-around;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 50px;
     padding-left: 0;
@@ -1457,4 +1462,68 @@ input[type=range]::-ms-thumb {
 .send-modal-content {
     box-shadow: 0 0 0 transparent;
     border-radius: 0;
+}
+
+.credit-block {
+    display: inline-block;
+    font-size: 30px;
+    color: #878a8f;
+}
+
+.credit-block.credit-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Circe Light';
+    color: #000;
+}
+
+.credit-calc-block {
+    margin-bottom: 45px;
+}
+
+.irs--round .irs-line {
+    width: 100%;
+    background: #9ea0b0;
+    top: 0;
+}
+
+.irs--round .irs-handle {
+    top: 27px;
+}
+
+.irs--round .irs-bar {
+    height: 6px;
+    background: #f7ba1e;
+    top: 38px;
+}
+
+.irs--round .irs-handle {
+    background: #a4a7b7;
+    border: none;
+    width: 30px;
+    height: 30px;
+    box-shadow: -2px 6px 7px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: -2px 6px 7px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: -2px 6px 7px 0px rgba(0,0,0,0.15);
+}
+
+.irs--round .irs-handle.state_hover,
+.irs--round .irs-handle:hover {
+    background: #a4a7b7;
+}
+
+.irs {
+    top: 0;
+}
+
+.irs--round .irs-bar {
+    top: 0;
+}
+
+.irs--round .irs-handle {
+    top: -10px;
+}
+
+.credit-sum {
+    margin-bottom: 20px;
 }
