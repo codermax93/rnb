@@ -244,7 +244,7 @@ p.range span:after {
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 100;
     background: #ffffff;
 }
 
@@ -940,6 +940,8 @@ p.range span:after {
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
 }
 
 .get-lot_img-wrap {
@@ -1097,6 +1099,7 @@ p.range span:after {
 }
 
 .block-credit-calculator-form-btn a {
+    display: inline-block;
     font-family: 'Gotham Pro Regular';
     font-size: 14px;
     text-transform: uppercase;
@@ -1353,17 +1356,6 @@ input[type=range]::-ms-thumb {
 
 .modal-body-list,
 .send-data-list {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: justify;
-    justify-content: space-around;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
     margin-bottom: 50px;
     padding-left: 0;
 }
@@ -1530,4 +1522,26 @@ input[type=range]::-ms-thumb {
 
 .modal {
     padding-right: 0 !important;
+    background: #fff;
+}
+
+.modal-body-list {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    text-align: center;
 }
