@@ -319,6 +319,7 @@
     .block-credit-calculator-form-content input {
         max-width: 50%;
         width: 100%;
+        padding: 0;
     }
     .block-credit-calculator-form-btn_text {
         max-width: 186px;
@@ -932,5 +933,10 @@
     }
     .interesting-offer-desc {
         margin-bottom: 65px;
+    }
+
+    .footer-bottom:before {
+        right: 6px;
+        bottom: -6px;
     }
 }

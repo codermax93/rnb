@@ -1477,7 +1477,7 @@ input[type=range]::-ms-thumb {
     color: #000;
 }
 
-.credit-calc-block {
+.block-credit-calculator-form-content .credit-calc-block:first-child {
     margin-bottom: 45px;
 }
 
@@ -1526,4 +1526,8 @@ input[type=range]::-ms-thumb {
 
 .credit-sum {
     margin-bottom: 20px;
+}
+
+.modal {
+    padding-right: 0 !important;
 }
