@@ -11,135 +11,7 @@
 //         $('.header').removeClass('header-mb');
 //     }
 // });
-
-window.onload = function () {
-	sliders();
-}
-
-function sliders() {
-
-	var tracks = [
-		'-webkit-slider-runnable-track',
-	];
-
-	var thumbs = [
-		'-webkit-slider-thumb',
-	];
-
-	initSliders();
-	var sliderGroups = document.querySelectorAll('section[data-type=slider-group]');
-	for (var i=0;i<sliderGroups.length;i+=1) {
-		initSliderGroup(sliderGroups[i]);
-	}
-
-	function initSliders() {
-		var sliders = document.querySelectorAll('input[type=range]');
-		var testAndWK = window.getComputedStyle(sliders[0],'::-webkit-slider-thumb').background;
-		for (var i=0;i<sliders.length;i+=1) {
-			if (!testAndWK) {
-				sliders[i].style.WebkitAppearance = 'slider-horizontal';
-			}
-			
-			// prepare a <style> tag that will be used by handleSlider()
-			
-			var st = document.createElement('style');
-			st.id = 's' + sliders[i].id;
-			document.head.appendChild(st);
-
-
-			sliders[i].addEventListener('input',function () {handleSlider(this)},false);
-			sliders[i].addEventListener('change',function () {handleSlider(this)},false);
-
-			sliders[i].output = sliders[i].parentNode.querySelector('output');
-			var dataSpan = sliders[i].parentNode.querySelector('span');
-			if (dataSpan && dataSpan.getAttribute('data-labels')) {
-				sliders[i].values = [];
-				var values = dataSpan.getAttribute('data-labels').split(';');
-				for (var j=0;j<values.length;j+=1) {
-					sliders[i].values.push(values[j]);
-				}
-			}
-			
-			
-			if (sliders[i].value*1) {
-				handleSlider(sliders[i]);
-			}
-		}
-	}
-
-	function handleSlider(slider) {
-	
-		// this sets the gradient for one slider to the correct color stops
-		// needs a prepared <style> tag created by initSliders()
-	
-		var gradValue = Math.round((slider.value/slider.getAttribute('max')*1)*100);
-		var grad = 'linear-gradient(90deg,#f7ba1e ' + gradValue + '%, #a4a7b7 ' + (gradValue+1) + '%)';
-		var rangeSelector = 'input[id='+slider.id+']::';
-		var styleString = '';
-		var printedValue = (slider.values) ? slider.values[slider.value] : slider.value;
-		slider.output.innerHTML = printedValue;
-		for (var j=0;j<tracks.length;j+=1) {
-			styleString += rangeSelector + tracks[j] + '{background: ' + grad + ';} ';
-		}
-		document.getElementById('s'+slider.id).textContent = styleString;
-	}
-
-	function initSliderGroup(parent) {
-		var sliders = parent.querySelectorAll('input[type=range]');
-		var max = parent.querySelector('div').getAttribute('data-total')*1;
-		var groupRoster = [];
-		var timeout;
-		for (var i=0;i<sliders.length;i+=1) {
-			groupRoster.push(sliders[i]);
-			sliders[i].others = [];
-			sliders[i].addEventListener('input',trackChange,false);
-			sliders[i].addEventListener('change',trackChange,false);
-		}
-		for (var i=0;i<sliders.length;i+=1) {
-			for (var j=0;j<groupRoster.length;j+=1) {
-				if (groupRoster[j] !== sliders[i]) {
-					sliders[i].others.push(groupRoster[j]);
-				}
-			}
-		}
-	
-		function trackChange () {
-			var that = this;
-			clearTimeout(timeout);
-			timeout = setTimeout(function () {
-				setOtherSliders(that);
-			},100);
-		}
-
-		function setOtherSliders(slider) {
-			var currentTotal = calculateTotal();
-			if (currentTotal > max) {
-				var excess = currentTotal - max;
-				var totalFromOthers = currentTotal - (slider.value*1);
-				for (var j=0;j<slider.others.length;j+=1) {
-					var newValue = Math.round(slider.others[j].value - ((slider.others[j].value/totalFromOthers)*excess));
-					slider.others[j].value = newValue;
-					handleSlider(slider.others[j]);
-				}
-			}
-		}
-
-	
-		function calculateTotal () {
-			var total = 0;
-			for (var i=0;i<groupRoster.length;i+=1) {
-				total += groupRoster[i].value*1;
-			}
-			return total;
-		}
-	
-	}
-}
-
-// function $(id) {
-// 	return document.getElementById(id);
-// }
-
+var range_2_val = 500000, range_3_val = 36
 
 $(document).ready(function () {
     $(".requirements_btn--link_1").click(function () { // элемент клика
@@ -154,6 +26,62 @@ $(document).ready(function () {
 		$(".requirements_list.link_2--mob").toggleClass('requirements_list--active');
 		$(".requirements_list.link_1--mob").removeClass('requirements_list--active');
 	});
+
+	$("#range-02").ionRangeSlider({
+		skin: "round",
+		min: 1,
+		max: 35000000,
+		step: 1000,
+		from: range_2_val,
+		hide_min_max: true,
+		hide_from_to: true,
+		onChange: function (data) {
+			$("#range-02-text").val(data.from_pretty);
+			range_2_val = data.from;
+			calculate();
+		},
+		onUpdate: function (data) {
+			$("#range-02-text").val(data.from_pretty);
+			range_2_val = data.from;
+			calculate();
+		}
+	});
+
+	$("#range-03").ionRangeSlider({
+		skin: "round",
+		min: 1,
+		max: 84,
+		step: 1,
+		from: range_3_val,
+		hide_min_max: true,
+		hide_from_to: true,
+		onChange: function (data) {
+			$("#range-03-text").val(data.from);
+			range_3_val = data.from;
+			calculate();
+		},
+		onUpdate: function (data) {
+			$("#range-03-text").val(data.from);
+			range_3_val = data.from;
+			calculate();
+		}
+	});
+
+    $("#range-02-text").on('change',function() {
+        $("#range-02").data("ionRangeSlider").update({
+            from: $("#range-02-text").val().replace(/[\D\s\._\-]+/g, "")
+        });
+    });
+
+    $("#range-03-text").on('change',function() {
+        var val = Math.round($("#range-03-text").val());
+        $("#range-03-text").val(val);
+        $("#range-03").data("ionRangeSlider").update({
+            from: val
+        });
+	});
+
+	calculate()
 });
 
 $(window).resize(function() {
@@ -166,3 +94,18 @@ $(window).resize(function() {
 	}
 
 }).resize();
+
+function calculate() {
+	var monthly = Math.pow(1.13, 1/12) - 1;
+	var s = Math.round((monthly * Math.pow(1 + monthly, range_3_val)) / (Math.pow(1 + monthly, range_3_val) - 1) * range_2_val).toLocaleString()
+	var b = $("#range-02").data("ionRangeSlider").result.from_pretty,
+		m = $("#range-03").data("ionRangeSlider").result.from
+	
+	$("#range-02-text").val(b);
+	$("#range-03-text").val(m);
+	$('#range-calc').text(s)
+
+	$("#calc-budget").text(b)
+	$("#calc-month").text(m)
+	$('#calc-result').text(s)
+}
