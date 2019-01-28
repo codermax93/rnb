@@ -29,7 +29,7 @@ $(document).ready(function () {
 
 	$("#range-02").ionRangeSlider({
 		skin: "round",
-		min: 1,
+		min: 0,
 		max: 35000000,
 		step: 1000,
 		from: range_2_val,
