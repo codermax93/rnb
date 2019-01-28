@@ -862,74 +862,76 @@
 }
 
 @media screen and (max-width: 990px) {
-  .modal-body-item span {
-    font-size: 26px;
-  }
-
-  .modal-body-item p {
-    font-size: 16px;
-  }
-
-  .modal-content {
-    padding: 0 10px;
-  }
-
-  .send-modal-close {
-    right: 0;
-  }
-
-  .send-modal-close {
-    font-size: 64px;
-    top: 17px;
-  }
-
-  .modal-body-item {
-    width: 100%;
-  }
+    .modal-body-item span {
+        font-size: 26px;
+    }
+    .modal-body-item p {
+        font-size: 16px;
+    }
+    .modal-content {
+        padding: 0 10px;
+    }
+    .send-modal-close {
+        right: 0;
+    }
+    .send-modal-close {
+        font-size: 64px;
+        top: 17px;
+    }
+    .modal-body-item {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .send-data-input::placeholder,
-  .send-data-item .form-control {
-    font-size: 10px;
-    padding: 0;
-  }
-
-  .send-modal-title {
-    font-size: 19px;
-  }
-  .send-data-list {
-    padding: 0;
-  }
-
-  .modal-body {
-    padding: 10px;
-  }
-
-  .send-data-item {
-    width: 100%;
-  }
-
-  .modal-dialog.wide {
-    margin: 0;
-  }
-
-  .interesting-offer_img {
-      display: none;
-  }
-
-  .interesting-offer_list {
-      position: relative;
-      top: 0;
-      left: 0;
-  }
-
-  .block-interesting-offer_list {
-    padding: 25px 0 0;
-    margin-bottom: 0;
-  }
-
-  .interesting-offer-desc {
-      margin-bottom: 65px;
-  }
+    .modal-header .close {
+        margin-top: -15px;
+    }
+    .modal-content {
+        height: 100vh;
+    }
+    .block-requirements .tab-content {
+        padding: 0 7%;
+    }
+    .block-credit-calculator-form-btn {
+        margin-top: 0;
+    }
+    .requirements_btn {
+        width: 100%;
+    }
+    .send-data-input::placeholder,
+    .send-data-item .form-control {
+        font-size: 10px;
+        padding: 0;
+    }
+    .send-modal-title {
+        font-size: 19px;
+    }
+    .send-data-list {
+        padding: 0;
+    }
+    .modal-body {
+        padding: 10px;
+    }
+    .send-data-item {
+        width: 100%;
+    }
+    .modal-dialog.wide {
+        margin: 0;
+    }
+    .interesting-offer_img {
+        display: none;
+    }
+    .interesting-offer_list {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .block-interesting-offer_list {
+        padding: 25px 0 0;
+        margin-bottom: 0;
+    }
+    .interesting-offer-desc {
+        margin-bottom: 65px;
+    }
 }
