@@ -1,0 +1,918 @@
+@media (max-width: 1130px) {
+    .g-content {
+        padding: 0px 0px;
+        margin: 0 0;
+    }
+    .block-slider-content {
+        padding: 0 0;
+    }
+    .header .g-content {
+        padding: 0 15px;
+    }
+    .header_logo {
+        background: url("../img/logo-mob--blue.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        width: 256.5px;
+        height: 35.5px;
+    }
+    .header_text {
+        display: none;
+    }
+    .header_phone {
+        font-size: 23px;
+    }
+    .header_phone:after {
+        font-size: 11px;
+    }
+    .block-slider {
+        margin-bottom: 0px;
+    }
+    .slider_list .slider_item {
+        padding: 50px 15px;
+    }
+    .slider_list .slider_item .slider_title {
+        max-width: 420px;
+        width: 100%;
+        font-size: 46px;
+        border: 70px;
+    }
+    .slider_list .slider_item .slider_text {
+        max-width: 295px;
+        width: 100%;
+        font-size: 23px;
+        margin-bottom: 75px;
+    }
+    .slider_list .slider_item .slider_btn {
+        max-width: 291px;
+        width: 100%;
+        font-size: 24px;
+        margin-bottom: 65px;
+    }
+    .slider_list .slider_item:nth-child(2) {
+        background: url("../img/slider-img-1--mob.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: right;
+    }
+    .slider_list .slider_item:nth-child(3) {
+        background: #0a72ba url("../img/slider-img-2--mob.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: right;
+    }
+    .slider_list .slider_item:nth-child(4) {
+        background: url("../img/slider-img-3--mob.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: right;
+    }
+    .slider_list .slider_item:nth-child(5) {
+        background: #0a72ba url("../img/slider-img-4--mob.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: right;
+    }
+    .bx-pager.bx-default-pager {
+        display: none;
+    }
+    .block-interesting-offer_list {
+        max-width: 1130px;
+        padding: 100px 0 90px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .block-interesting-offer_item {
+        max-width: 580px;
+        width: 100%;
+        -webkit-box-shadow: 0px 0px 5px 0px #a4a7b7;
+        box-shadow: 0px 0px 5px 0px #a4a7b7;
+    }
+    .block-interesting-offer_item:after {
+        display: none !important;
+    }
+    .block-interesting-offer_btn {
+        padding: 26px 0px 20px 110px !important;
+        position: relative;
+    }
+    .block-interesting-offer_btn:before {
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        left: -66px !important;
+    }
+    .interesting-offer-desc {
+        max-width: 1130px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-align: normal;
+        -webkit-align-items: normal;
+        -ms-flex-align: normal;
+        align-items: normal;
+        position: relative;
+    }
+    .interesting-offer_img {
+        background: url("../img/pexels-photo-273209--mob.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        max-width: 93%;
+        width: 100%;
+        height: 337px;
+        -webkit-box-shadow: 10px 12px 15px -3px #a2a2a2;
+        box-shadow: 10px 12px 15px -3px #a2a2a2;
+    }
+    .interesting-offer_img img {
+        display: none;
+    }
+    .interesting-offer_list {
+        background: #ffffff;
+        -webkit-box-shadow: 10px 12px 15px -3px #a4a7b7;
+        box-shadow: 10px 12px 15px -3px #a4a7b7;
+        position: absolute;
+        bottom: -65px;
+        right: 15px;
+        padding-left: 60px;
+        width: auto;
+        padding: 50px 79px 41px 99px;
+    }
+    .interesting-offer_item {
+        font-size: 18.5px;
+        line-height: 35px;
+    }
+    .interesting-offer_item:before {
+        width: 23px;
+        height: 17px;
+        -webkit-background-size: cover;
+        background-size: cover;
+        top: 8px;
+        bottom: auto;
+        margin: 0px;
+    }
+    .interesting-offer-static_list {
+        padding: 65px 15px 35px;
+    }
+    .interesting-offer-static_item {
+        max-width: 25%;
+        width: 100%;
+        margin-bottom: 35px;
+        font-size: 16px;
+    }
+    .interesting-offer-static_item:nth-child(2) {
+        display: none;
+    }
+    .interesting-offer-static_item span:nth-child(1) {
+        font-size: 68px;
+    }
+    .interesting-offer-static_item span:nth-child(2) {
+        font-size: 14px;
+    }
+    .interesting-offer-static_btn {
+        max-width: 305px;
+        font-size: 19px;
+        text-align: center;
+    }
+    .get-consultation_title {
+        font-size: 30px;
+        max-width: 420px;
+        width: 100%;
+        margin-bottom: 37px;
+        text-align: center;
+    }
+    .block-get-consultation {
+        max-height: 285px;
+        margin-bottom: 430px;
+        background: #0a9ad6;
+    }
+    .get-consultation_form {
+        max-width: 590px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        top: 0px;
+        padding: 55px 60px 50px;
+    }
+    .get-consultation_form input {
+        max-width: 920px;
+        width: 100%;
+    }
+    .get-consultation_name {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+        margin-bottom: 70px;
+    }
+    .get-consultation_phone {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+        margin-bottom: 55px;
+    }
+    .get-consultation_btn {
+        -webkit-box-ordinal-group: 5;
+        -webkit-order: 4;
+        -ms-flex-order: 4;
+        order: 4;
+    }
+    .get-consultation_text {
+        -webkit-box-ordinal-group: 4;
+        -webkit-order: 3;
+        -ms-flex-order: 3;
+        order: 3;
+        top: 0px;
+        margin-bottom: 60px;
+    }
+    .block-requirements {
+        max-width: 591px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .requirements_list-btn {
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    .requirements_item-btn {
+        padding-right: 0px;
+    }
+    .get-lot_title {
+        color: #0a9ad6;
+        font-size: 36px;
+        max-width: 415px;
+        margin: 90px auto;
+    }
+    .get-lot_list {
+        padding: 0px 15px;
+        margin-bottom: 100px;
+    }
+    .get-lot_item {
+        max-width: 45%;
+        width: 100%;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    .get-lot_subtitle {
+        font-size: 28px;
+    }
+    .get-lot_text {
+        font-size: 20px;
+    }
+    .block-credit-calculator {
+        padding: 0 15px;
+    }
+    .block-credit-calculator_form {
+        margin-bottom: 140px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+    .block-credit-calculator-form-btn {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+        max-width: 440px;
+        max-height: 210px;
+    }
+    .block-credit-calculator-form-content {
+        font-size: 18px;
+    }
+    p.range output {
+        font-size: 21px;
+    }
+    .block-credit-calculator_title {
+        font-size: 36px;
+    }
+    .block-credit-calculator-form-content input {
+        max-width: 460px;
+        width: 100%;
+    }
+    .block-credit-calculator-form-btn_text {
+        max-width: 186px;
+        font-size: 15px;
+    }
+    .block-credit-calculator-form-btn_sum {
+        font-size: 30px;
+    }
+    .block-credit-calculator-form-btn button {
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        padding: 22px 21px;
+        font-size: 18px;
+    }
+    .credit-calculator_text {
+        font-size: 18px;
+    }
+    .credit-calculator_logo {
+        background: url("../img/logo-mob-2.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        width: 180px;
+        height: 60px;
+        margin-bottom: 40px;
+    }
+    .credit-calculator_list {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        padding: 0px;
+    }
+    .credit-calculator_item {
+        max-width: 170px;
+        margin-bottom: 50px;
+        font-size: 15px;
+    }
+    .credit-calculator_item span {
+        font-size: 24px;
+    }
+    .footer_link--logo {
+        background: url("../img/bg-logo-mob-1.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        width: 210px;
+        height: 45px;
+    }
+    .footer_link {
+        font-size: 15px;
+    }
+    .address-license_list {
+        margin: 0 auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        font-size: 10px;
+        padding: 0 15px;
+    }
+    .address-license_item {
+        margin: 0 auto;
+        padding: 50px 0 45px;
+    }
+}
+
+@media (max-width: 620px) {
+    .g-content {
+        padding: 0px 0px;
+        margin: 0 0;
+    }
+    .block-slider-content {
+        padding: 0 0;
+    }
+    .header .g-content {
+        padding: 0 15px;
+    }
+    .header_logo {
+        -webkit-background-size: contain;
+        background-size: contain;
+        width: 171px;
+        height: 23.66px;
+    }
+    .header_text {
+        display: none;
+    }
+    .header_phone {
+        font-size: 14px;
+    }
+    .header_phone:after {
+        font-size: 9px;
+    }
+    .block-slider {
+        margin-bottom: 0px;
+    }
+    .slider_list .slider_item {
+        padding: 33px 15px;
+    }
+    .slider_list .slider_item .slider_title {
+        max-width: 280px;
+        width: 100%;
+        font-size: 30px;
+        margin-bottom: 45px;
+    }
+    .slider_list .slider_item .slider_text {
+        max-width: 197px;
+        width: 100%;
+        font-size: 15.33px;
+        margin-bottom: 50px;
+    }
+    .slider_list .slider_item .slider_btn {
+        max-width: 194px;
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 43px;
+    }
+    .slider_list .slider_item:nth-child(2) {
+        background: url("../img/slider-img-1--mob.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: right;
+    }
+    .slider_list .slider_item:nth-child(3) {
+        background: #0a72ba url("../img/slider-img-2--mob.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: right;
+    }
+    .slider_list .slider_item:nth-child(4) {
+        background: url("../img/slider-img-3--mob.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: right;
+    }
+    .slider_list .slider_item:nth-child(5) {
+        background: #0a72ba url("../img/slider-img-4--mob.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: right;
+    }
+    .bx-pager.bx-default-pager {
+        display: none;
+    }
+    .block-interesting-offer_list {
+        max-width: 620px;
+        padding: 50px 0 45px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .block-interesting-offer_item {
+        max-width: 386px;
+        width: 100%;
+        -webkit-box-shadow: 0px 0px 5px 0px #a4a7b7;
+        box-shadow: 0px 0px 5px 0px #a4a7b7;
+    }
+    .block-interesting-offer_item:after {
+        display: none !important;
+    }
+    .block-interesting-offer_btn {
+        padding: 17px 0px 13px 73px !important;
+        font-size: 16px;
+    }
+    .block-interesting-offer_btn:before {
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        left: 6px !important;
+    }
+    .block-interesting-offer_item:nth-child(1) .block-interesting-offer_btn:before {
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+    }
+    .block-interesting-offer_item:nth-child(2) .block-interesting-offer_btn:before {
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+    }
+    .block-interesting-offer_item:nth-child(3) .block-interesting-offer_btn:before {
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+    }
+    .interesting-offer-desc {
+        max-width: 620px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-align: normal;
+        -webkit-align-items: normal;
+        -ms-flex-align: normal;
+        align-items: normal;
+        position: relative;
+        margin-bottom: 145px;
+    }
+    .interesting-offer_img {
+        max-width: 100%;
+        width: 100%;
+        height: 337px;
+        -webkit-box-shadow: 10px 12px 15px -3px #a2a2a2;
+        box-shadow: 10px 12px 15px -3px #a2a2a2;
+    }
+    .interesting-offer_img img {
+        display: none;
+    }
+    .interesting-offer_list {
+        background: #ffffff;
+        -webkit-box-shadow: 10px 12px 15px -3px #a4a7b7;
+        box-shadow: 10px 12px 15px -3px #a4a7b7;
+        position: absolute;
+        bottom: -125px;
+        right: 0px;
+        width: auto;
+        padding: 10px 20px 10px 50px;
+    }
+    .interesting-offer_item {
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .interesting-offer_item:before {
+        width: 18px;
+        height: 14px;
+        left: -35px;
+    }
+    .interesting-offer-static_list {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        padding: 43px 15px 23px;
+    }
+    .interesting-offer-static_item {
+        max-width: 50%;
+        font-size: 16px;
+    }
+    .interesting-offer-static_item:nth-child(3) {
+        border-right: 0px;
+    }
+    .interesting-offer-static_item span:nth-child(1) {
+        font-size: 68px;
+    }
+    .interesting-offer-static_item span:nth-child(2) {
+        font-size: 14px;
+    }
+    .interesting-offer-static_btn {
+        max-width: 280px;
+        padding: 20px 25px;
+    }
+    .get-consultation_title {
+        font-size: 20px;
+        max-width: 620px;
+        width: 100%;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .block-get-consultation {
+        max-height: 190px;
+        margin-bottom: 430px;
+        background: #0a9ad6;
+    }
+    .get-consultation_form {
+        max-width: 620px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        top: 0px;
+        padding: 36px 40px 33px;
+    }
+    .get-consultation_form input {
+        font-size: 16px;
+    }
+    .get-consultation_name {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+        margin-bottom: 40px;
+    }
+    .get-consultation_phone {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+        margin-bottom: 30px;
+    }
+    .get-consultation_btn {
+        -webkit-box-ordinal-group: 5;
+        -webkit-order: 4;
+        -ms-flex-order: 4;
+        order: 4;
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+    .get-consultation_text {
+        font-size: 13px;
+    }
+    .block-requirements {
+        max-width: 591px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .requirements_list {
+        padding: 0px;
+    }
+    .requirements_list-btn {
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    .requirements_item-btn {
+        padding-right: 0px;
+        width: 100%;
+        padding: 0px 15px;
+    }
+    .get-lot_item .get-lot_img {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .get-lot_title {
+        font-size: 24px;
+        line-height: 45px;
+        margin: 50px auto;
+    }
+    .get-lot_list {
+        margin-bottom: 50px;
+    }
+    .get-lot_item {
+        max-width: 45%;
+        width: 100%;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    .get-lot_subtitle {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .get-lot_text {
+        font-size: 16px;
+    }
+    .block-credit-calculator {
+        padding: 0 15px;
+    }
+    .block-credit-calculator_form {
+        margin-bottom: 140px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+    .block-credit-calculator-form-btn {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+        max-width: 440px;
+        max-height: 210px;
+    }
+    .block-credit-calculator-form-content {
+        font-size: 18px;
+    }
+    p.range output {
+        font-size: 24px;
+        top: -54px;
+        right: 0px;
+    }
+    .block-credit-calculator_title {
+        font-size: 24px;
+    }
+    .block-credit-calculator-form-content input {
+        max-width: 460px;
+        width: 100%;
+    }
+    .block-credit-calculator-form-btn_text {
+        max-width: 186px;
+        font-size: 10px;
+    }
+    .block-credit-calculator-form-btn_sum {
+        font-size: 20px;
+    }
+    .block-credit-calculator-form-btn button {
+        position: absolute;
+        top: 2px;
+        right: 0px;
+        padding: 20px 15px;
+        font-size: 12px;
+    }
+    .credit-calculator_text {
+        margin-left: 0px;
+        font-size: 16px;
+    }
+    .credit-calculator_logo {
+        background: url("../img/logo-mob-2.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        width: 180px;
+        height: 60px;
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+    .credit-calculator_list {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        padding: 0px;
+    }
+    .credit-calculator_item {
+        font-size: 10px;
+    }
+    .credit-calculator_item span {
+        font-size: 16px;
+    }
+    .requirements_btn:hover,
+    .requirements_btn:active,
+    .requirements_btn:focus {
+        border-bottom: none;
+    }
+    .requirements_list.tab-pane {
+        display: none;
+    }
+    .requirements_list.link_2--mob.requirements_list--active {
+        display: block;
+        overflow: auto;
+    }
+    .requirements_list.link_1--mob.requirements_list--active {
+        display: block;
+        overflow: auto;
+    }
+    .requirements_item-btn {
+        border-bottom: 1px solid #a4a7b7;
+    }
+    .block-requirements:before {
+        display: none;
+    }
+    .requirements_btn {
+        font-size: 16px;
+        position: relative;
+        border-bottom: none;
+    }
+    .requirements_btn:after {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        display: block;
+        content: '';
+        background: url("../img/arrow.svg");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        width: 27px;
+        height: 20px;
+    }
+    .requirements_btn--active:after {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        display: block;
+        content: '';
+        background: url("../img/arrow_open.svg");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        width: 27px;
+        height: 20px;
+    }
+    .footer_link--logo {
+        background: url("../img/bg-logo-mob-1.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        width: 171px;
+        height: 23.66px;
+    }
+    .footer_list {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .footer_link {
+        font-size: 10px;
+    }
+    .address-license_list {
+        margin: 0 auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        font-size: 10px;
+        padding: 0 15px;
+    }
+    .address-license_item {
+        margin: 0 auto;
+        padding: 50px 0 45px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header_logo {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+  .modal-body-item span {
+    font-size: 26px;
+  }
+
+  .modal-body-item p {
+    font-size: 16px;
+  }
+
+  .modal-content {
+    padding: 0 10px;
+  }
+
+  .send-modal-close {
+    right: 0;
+  }
+
+  .send-modal-close {
+    font-size: 64px;
+    top: 17px;
+  }
+
+  .modal-body-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .send-data-input::placeholder,
+  .send-data-item .form-control {
+    font-size: 13px;
+    height: auto;
+    padding: 0;
+  }
+
+  .send-modal-title {
+    font-size: 19px;
+  }
+  .send-data-list {
+    padding: 0;
+  }
+
+  .modal-body {
+    padding: 10px;
+  }
+
+  .send-data-item {
+    width: 100%;
+  }
+
+  .modal-dialog.wide {
+    margin: 0;
+  }
+}
