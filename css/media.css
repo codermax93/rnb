@@ -50,28 +50,28 @@
         font-size: 24px;
         margin-bottom: 65px;
     }
-    .slider_list .slider_item:nth-child(2) {
+    .owl-item:nth-child(1) .slider_item {
         background: url("../img/slider-img-1--mob.png");
         background-repeat: no-repeat;
         -webkit-background-size: contain;
         background-size: contain;
         background-position: right;
     }
-    .slider_list .slider_item:nth-child(3) {
+    .owl-item:nth-child(2) .slider_item {
         background: #0a72ba url("../img/slider-img-2--mob.png");
         background-repeat: no-repeat;
         -webkit-background-size: contain;
         background-size: contain;
         background-position: right;
     }
-    .slider_list .slider_item:nth-child(4) {
+    .owl-item:nth-child(3) .slider_item {
         background: url("../img/slider-img-3--mob.png");
         background-repeat: no-repeat;
         -webkit-background-size: contain;
         background-size: contain;
         background-position: bottom;
     }
-    .slider_list .slider_item:nth-child(5) {
+    .owl-item:nth-child(4) .slider_item {
         background: #0a72ba url("../img/slider-img-4--mob.png");
         background-repeat: no-repeat;
         -webkit-background-size: contain;
@@ -717,7 +717,6 @@
         font-size: 24px;
         margin-bottom: 50px;
     }
-    
     .block-credit-calculator-form-btn button {
         position: absolute;
         top: 2px;
@@ -938,12 +937,10 @@
     .interesting-offer-desc {
         margin-bottom: 65px;
     }
-
     .footer-bottom:before {
         right: 6px;
         bottom: -6px;
     }
-
     .modal-body-list {
         margin-bottom: 30px;
     }

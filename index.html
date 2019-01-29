@@ -6,12 +6,12 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>«РУСНАРБАНК»</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="libs/bxslider-4-4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
 </head>
 
 <body>
@@ -27,13 +27,14 @@
         </div>
     </header>
     <!-- END HEADER -->
+
     <!-- MAIN -->
     <main class="main">
         <div class="g-wrapper">
             <div class="g-content block-slider-content">
                 <div class="block-slider">
-                    <ul class="slider_list">
-                        <li class="slider_item">
+                    <div class="owl-carousel slider_list">
+                        <div class="slider_item">
                             <h3 class="slider_title">
                                 Удобный кредит на<br> вкусных условиях
                             </h3>
@@ -43,8 +44,8 @@
                             <a href="#" class="slider_btn" data-toggle="modal" data-target="#send-app">
                                 отправить заявку
                             </a>
-                        </li>
-                        <li class="slider_item">
+                        </div>
+                        <div class="slider_item">
                             <h3 class="slider_title">
                                 Выкупайте объекты<br> выгодно и быстро
                             </h3>
@@ -54,8 +55,8 @@
                             <a href="#" class="slider_btn" data-toggle="modal" data-target="#send-app-2">
                                 отправить заявку
                             </a>
-                        </li>
-                        <li class="slider_item">
+                        </div>
+                        <div class="slider_item">
                             <h3 class="slider_title">
                                 Предварительное решение<br>за 5 часов без справок
                             </h3>
@@ -65,8 +66,8 @@
                             <a href="#" class="slider_btn" data-toggle="modal" data-target="#send-app-3">
                                 отправить заявку
                             </a>
-                        </li>
-                        <li class="slider_item">
+                        </div>
+                        <div class="slider_item">
                             <h3 class="slider_title">
                                 Быстрый кредитный сервис <br> для юр лиц
                             </h3>
@@ -76,8 +77,8 @@
                             <a href="#" class="slider_btn" data-toggle="modal" data-target="#send-app-4">
                                 отправить заявку
                             </a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -834,16 +835,14 @@
 
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script src="libs/jquery-3.3.1.min.js"></script> -->
-    <script src="libs/bxslider-4-4.2.12/jquery.bxslider.js"></script>
+    <script src="libs/owl.carousel.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        jQuery(document).ready(function () {
-            jQuery('.slider_list').bxSlider({
-                responsive: true,
-                adaptiveHeight: true,
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
             });
         });
     </script>
