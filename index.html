@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>«РУСНАРБАНК»</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
     <link rel="stylesheet" href="css/main.css">
@@ -135,16 +136,16 @@
                                     </span>
                                     <ul class="interesting-offer_list">
                                         <li class="interesting-offer_item">
-                                            Для оценки залога достаточно его адреса
+                                            Реально получить за неделю
                                         </li>
                                         <li class="interesting-offer_item">
-                                            Быстрая и отлаженная процедура выдачи
+                                            Решение по 2 фин. документам
                                         </li>
                                         <li class="interesting-offer_item">
-                                            Чуть-чуть документов
+                                            Подготовить заявку займет не более 10 мин
                                         </li>
                                         <li class="interesting-offer_item">
-                                            Предварительное одобрение без справок
+                                            Одобрение без справок и посещения банка
                                         </li>
                                     </ul>
                                 </div>
@@ -161,10 +162,10 @@
                                             Для оценки залога достаточно адреса объекта
                                         </li>
                                         <li class="interesting-offer_item">
-                                            Приобретайте ликвидные объекты или апартаменты
+                                            Бизнес ипотека – залог приобретаемого объекта
                                         </li>
                                         <li class="interesting-offer_item">
-                                            Чуть-чуть документов
+                                            Возможно без первоначального взноса
                                         </li>
                                         <li class="interesting-offer_item">
                                             Одобрение с пониманием реалий бизнеса
@@ -187,10 +188,10 @@
                                             Последзалог
                                         </li>
                                         <li class="interesting-offer_item">
-                                            Консолидация кредитов компании
+                                            Объедините кредиты и экономьте каждый месяц
                                         </li>
                                         <li class="interesting-offer_item">
-                                            Одобрение с пониманием реалий бизнеса
+                                            Длинный срок = меньше платеж
                                         </li>
                                     </ul>
                                 </div>
@@ -522,7 +523,7 @@
                             <li class="send-data-item">
                                 <input type="email" name="email" class="send-data-input" placeholder="E-MAIL*" required>
                             </li>
-                            <li class="send-data-item">
+                            <li class="send-data-item" data-tooltip="для учета особенностей Бизнеса">
                                 <input type="text" name="inn" class="send-data-input" placeholder="ИНН*" required>
                             </li>
                         </ul>
@@ -539,7 +540,7 @@
                                     </select>
                                 </div>
                             </li>
-                            <li class="send-data-item">
+                            <li class="send-data-item" data-tooltip="для более точной оценки">
                                 <input type="text" name="address" class="send-data-input" placeholder="Адрес">
                             </li>
                             <li class="send-data-item">
@@ -583,7 +584,7 @@
                             <li class="send-data-item">
                                 <input type="email" name="email" class="send-data-input" placeholder="E-MAIL*" required>
                             </li>
-                            <li class="send-data-item">
+                            <li class="send-data-item" data-tooltip="для учета особенностей Бизнеса">
                                 <input type="text" name="inn" class="send-data-input" placeholder="ИНН*" required>
                             </li>
                         </ul>
@@ -600,8 +601,8 @@
                                     </select>
                                 </div>
                             </li>
-                            <li class="send-data-item">
-                                <input type="text" class="send-data-input" name="address" placeholder="Адрес">
+                            <li class="send-data-item" data-tooltip="для более точной оценки">
+                                <input type="text" class="send-data-input" name="address" placeholder="Адрес" data-tooltip="для более точной оценки">
                             </li>
                             <li class="send-data-item">
                                 <input type="text" name="square" class="send-data-input" placeholder="Площадь">
@@ -644,7 +645,7 @@
                             <li class="send-data-item">
                                 <input type="email" name="email" class="send-data-input" placeholder="E-MAIL*" required>
                             </li>
-                            <li class="send-data-item">
+                            <li class="send-data-item" data-tooltip="для учета особенностей Бизнеса">
                                 <input type="text" name="inn" class="send-data-input" placeholder="ИНН*" required>
                             </li>
                         </ul>
@@ -661,7 +662,7 @@
                                     </select>
                                 </div>
                             </li>
-                            <li class="send-data-item">
+                            <li class="send-data-item" data-tooltip="для более точной оценки">
                                 <input type="text" class="send-data-input" placeholder="Адрес" name="address">
                             </li>
                             <li class="send-data-item">
@@ -705,7 +706,7 @@
                             <li class="send-data-item">
                                 <input type="email" name="email" class="send-data-input" placeholder="E-MAIL*" required>
                             </li>
-                            <li class="send-data-item">
+                            <li class="send-data-item" data-tooltip="для учета особенностей Бизнеса">
                                 <input type="text" class="send-data-input" placeholder="ИНН*" name="inn" required>
                             </li>
                         </ul>
@@ -722,7 +723,7 @@
                                     </select>
                                 </div>
                             </li>
-                            <li class="send-data-item">
+                            <li class="send-data-item" data-tooltip="для более точной оценки">
                                 <input type="text" class="send-data-input" placeholder="Адрес" name="address">
                             </li>
                             <li class="send-data-item">
@@ -781,7 +782,7 @@
                             <li class="send-data-item">
                                 <input type="email" class="send-data-input" placeholder="E-MAIL*" name="email" required>
                             </li>
-                            <li class="send-data-item">
+                            <li class="send-data-item" data-tooltip="для учета особенностей Бизнеса">
                                 <input type="text" class="send-data-input" placeholder="ИНН*" name="inn" required>
                             </li>
                         </ul>
@@ -798,7 +799,7 @@
                                     </select>
                                 </div>
                             </li>
-                            <li class="send-data-item">
+                            <li class="send-data-item" data-tooltip="для более точной оценки">
                                 <input type="text" class="send-data-input" placeholder="Адрес" name="address">
                             </li>
                             <li class="send-data-item">
@@ -844,7 +845,7 @@
                             <li class="send-data-item">
                                 <input type="email" class="send-data-input" placeholder="E-MAIL*" name="email" required>
                             </li>
-                            <li class="send-data-item">
+                            <li class="send-data-item" data-tooltip="для учета особенностей Бизнеса">
                                 <input type="text" class="send-data-input" placeholder="ИНН*" name="inn" required>
                             </li>
                         </ul>
@@ -861,7 +862,7 @@
                                     </select>
                                 </div>
                             </li>
-                            <li class="send-data-item">
+                            <li class="send-data-item" data-tooltip="для более точной оценки">
                                 <input type="text" class="send-data-input" placeholder="Адрес" name="address">
                             </li>
                             <li class="send-data-item">
@@ -885,10 +886,11 @@
 
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7/dist/sweetalert2.all.min.js"></script>
     <script src="libs/jquery.mask.min.js"></script>
     <script src="libs/owl.carousel.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
     <script src="js/main.js"></script>
     <script>
@@ -898,6 +900,7 @@
                 autoplay: true,
                 autoplayTimeout: 3000,
                 dots: true,
+                autoplayHoverPause:true
             });
         });
     </script>

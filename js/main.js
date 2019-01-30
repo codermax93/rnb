@@ -6,6 +6,7 @@ $(document).ready(function () {
 		$(".requirements_btn--link_2").removeClass('requirements_btn--active');
 		$(".requirements_list.link_1--mob").toggleClass('requirements_list--active');
 		$(".requirements_list link_2--mob").removeClass('requirements_list--active');
+		$('[data-toggle="tooltip"]').tooltip(); 
 	});
 	$(".requirements_btn--link_2").click(function () { // элемент клика
 		$(".requirements_btn--link_2").toggleClass('requirements_btn--active');
@@ -16,9 +17,9 @@ $(document).ready(function () {
 
 	$("#range-02").ionRangeSlider({
 		skin: "round",
-		min: 0,
+		min: 1000000,
 		max: 35000000,
-		step: 1000,
+		step: 500000,
 		from: range_2_val,
 		hide_min_max: true,
 		hide_from_to: true,

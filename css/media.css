@@ -587,7 +587,7 @@
     }
     .interesting-offer_item {
         font-size: 16px;
-        line-height: 35px;
+        line-height: 25px;
     }
     .interesting-offer_item:before {
         width: 18px;
@@ -922,6 +922,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .send-data-list {
+        width: 100%;
+    }
     .requirements_item {
         font-size: 16px;
         padding: 0 10px;
