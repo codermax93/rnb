@@ -235,8 +235,14 @@
                         <input type="text" class="get-consultation_phone" placeholder="ТЕЛЕФОН*" name="phone" required
                             data-mask="+7 (000) 000-00-00">
                         <button class="get-consultation_btn">получить консультацию</button>
-                        <span class="get-consultation_text">Нажимая кнопку я даю согласие на обработку персональных
-                            данных</span>
+
+                        <label class="container-check">
+                            Нажимая кнопку я даю согласие на обработку персональных
+                            данных
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                        </label>
+
                     </form>
                 </div>
             </div>
@@ -889,6 +895,9 @@
         $(document).ready(function () {
             $(".owl-carousel").owlCarousel({
                 items: 1,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                dots: true,
             });
         });
     </script>

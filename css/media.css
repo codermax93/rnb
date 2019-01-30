@@ -384,9 +384,24 @@
         margin: 0 auto;
         padding: 50px 0 45px;
     }
+
+    .checkmark {
+        top: 3px;
+    }
 }
 
 @media (max-width: 620px) {
+
+    .container-check {
+        margin-bottom: 20px;
+    }
+    .owl-dots {
+        bottom: 5px;
+    }
+    .owl-carousel button.owl-dot {
+        width: 10px;
+        height: 10px;
+    }
     .owl-item:nth-child(1) .slider_item {
         background-size: 45%;
         background-position: bottom right;
