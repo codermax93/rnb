@@ -333,6 +333,7 @@ p.range span:after {
 }
 
 .block-slider {
+    position: relative;
     margin-bottom: 30px;
 }
 
@@ -396,8 +397,9 @@ p.range span:after {
 }
 
 .owl-item:nth-child(2) .slider_item .slider_btn {
-    border: 2px solid #ffffff;
-    color: #ffffff;
+    background: #fff;
+    color: #0a9ad6;
+    border: 1px solid #0a9ad6;
 }
 
 .owl-item:nth-child(3) .slider_item {
@@ -422,8 +424,9 @@ p.range span:after {
 }
 
 .owl-item:nth-child(4) .slider_item .slider_btn {
-    border: 2px solid #ffffff;
-    color: #ffffff;
+    background: #fff;
+    color: #0a9ad6;
+    border: 1px solid #0a9ad6;
 }
 
 .owl-item .slider_item .slider_title {
@@ -441,6 +444,10 @@ p.range span:after {
     font-size: 24px;
 }
 
+.owl-item .slider_item {
+    min-height: 490px;
+}
+
 .owl-item .slider_item .slider_btn {
     margin: 0px;
     padding: 24px 21px;
@@ -451,6 +458,11 @@ p.range span:after {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #0a9ad6;
+    position: absolute;
+    bottom: 60px;
+    left: 9.2%;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 /* END BLOCK-SLIDER */
@@ -611,10 +623,10 @@ p.range span:after {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: normal;
+    -webkit-align-items: normal;
+    -ms-flex-align: normal;
+    align-items: normal;
 }
 
 .interesting-offer_list {
@@ -624,8 +636,8 @@ p.range span:after {
 
 .interesting-offer_item {
     position: relative;
-    font-family: 'Circe Regular';
-    font-size: 27px;
+    font-family: 'Gotham Pro Regular';
+    font-size: 23px;
     line-height: 1.5;
     color: #000000;
 }
@@ -637,7 +649,7 @@ p.range span:after {
     display: block;
     position: absolute;
     left: -45px;
-    top: 10px;
+    top: 5px;
     margin: auto;
     background: url("../img/checked.png");
 }
@@ -999,6 +1011,7 @@ p.range span:after {
 .get-lot_text {
     font-family: 'Circe Light';
     font-size: 23px;
+    line-height: 1.2;
 }
 
 /* END BLOCK-GET-LOT */
@@ -1031,7 +1044,7 @@ p.range span:after {
     margin-bottom: 75px;
     font-family: 'Gilroy Semibold';
     font-size: 36px;
-    color: #5f9fce;
+    color: #000;
     display: block;
     text-align: center;
 }
@@ -1044,7 +1057,7 @@ p.range span:after {
 
 .block-credit-calculator-form-content input {
     pointer-events: none;
-    max-width: 467px;
+    max-width: 300px;
     width: 100%;
     display: inline-block;
     margin: 0 auto;
@@ -1226,9 +1239,9 @@ p.range span:after {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
+    -webkit-justify-content: space-around;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-around;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -1522,7 +1535,6 @@ input[type=range]::-ms-thumb {
 
 .modal {
     padding-right: 0 !important;
-    background: #fff;
 }
 
 .modal-body-list {
@@ -1544,4 +1556,54 @@ input[type=range]::-ms-thumb {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     text-align: center;
+}
+
+.interesting-offer_img {
+    max-width: 340px;
+}
+
+.interesting-offer_img img {
+    max-width: 100%;
+}
+
+.footer_list-left {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.inner-wrap {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-text-second {
+    width: 100%;
+}
+
+.get-lot_title.desktop {
+    display: block;
+}
+
+.get-lot_title.mobile {
+    display: none;
+}
+
+.swal2-popup .swal2-title {
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Circe Light';
 }

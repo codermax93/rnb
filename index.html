@@ -8,13 +8,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>«РУСНАРБАНК»</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N52MQ6T');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N52MQ6T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- HEADER -->
     <header class="header">
@@ -41,9 +57,12 @@
                             <span class="slider_text">
                                 Максимально упростили процедуру выдачи
                             </span>
-                            <a href="#" class="slider_btn" data-toggle="modal" data-target="#send-app">
-                                отправить заявку
-                            </a>
+                            <div class="g-content">
+                                <a href="#" class="slider_btn" data-toggle="modal" data-target="#send-app">
+                                    отправить заявку
+                                </a>
+                            </div>
+
                         </div>
                         <div class="slider_item">
                             <h3 class="slider_title">
@@ -112,7 +131,7 @@
                             <div class="interesting-offer_desc">
                                 <div class="interesting-offer-desc">
                                     <span class="interesting-offer_img">
-                                        <img src="img/pexels-photo-273209.png" alt="">
+                                        <img src="img/money.jpg" alt="">
                                     </span>
                                     <ul class="interesting-offer_list">
                                         <li class="interesting-offer_item">
@@ -158,7 +177,7 @@
                             <div class="interesting-offer_desc">
                                 <div class="interesting-offer-desc">
                                     <span class="interesting-offer_img">
-                                        <img src="img/pexels-photo-273209.png" alt="">
+                                        <img src="img/calculator.jpg" alt="">
                                     </span>
                                     <ul class="interesting-offer_list">
                                         <li class="interesting-offer_item">
@@ -211,9 +230,10 @@
                     <h3 class="get-consultation_title">
                         Наш менеджер рассчитает самый выгодный график для вас
                     </h3>
-                    <form action="" class="get-consultation_form">
-                        <input type="text" class="get-consultation_name" placeholder="ИМЯ*" required>
-                        <input type="text" class="get-consultation_phone" placeholder="ТЕЛЕФОН*" required>
+                    <form action="" class="get-consultation_form" id="send-7" method="POST">
+                        <input type="text" class="get-consultation_name" placeholder="ИМЯ*" name="name" required>
+                        <input type="text" class="get-consultation_phone" placeholder="ТЕЛЕФОН*" name="phone" required
+                            data-mask="+7 (000) 000-00-00">
                         <button class="get-consultation_btn">получить консультацию</button>
                         <span class="get-consultation_text">Нажимая кнопку я даю согласие на обработку персональных
                             данных</span>
@@ -285,7 +305,10 @@
         <div class="g-wrapper">
             <div class="g-content">
                 <div class="block-get-lot">
-                    <h3 class="get-lot_title">
+                    <h3 class="get-lot_title mobile">
+                        Получить кредит у нас - <br> удобно и просто!
+                    </h3>
+                    <h3 class="get-lot_title desktop">
                         Получить кредит у нас - удобно и просто!
                     </h3>
                     <ul class="get-lot_list">
@@ -420,18 +443,33 @@
     <!-- END MAIN -->
     <!-- FOOTER -->
     <footer class="footer">
+
         <div class="g-wrapper g-wrapper--logo-2">
-            <ul class="footer_list">
-                <li class="footer_item">
-                    <a href="#" class="footer_link footer_link--logo"></a>
-                </li>
-                <li class="footer_item">
-                    <a href="#" class="footer_link">Подробные условия</a>
-                </li>
-                <li class="footer_item">
-                    <a href="#" class="footer_link">Раскрытие информации</a>
-                </li>
-            </ul>
+            <div class="g-content">
+                <div class="inner-wrap">
+                    <div class="footer-text-first">
+                        <ul class="footer_list-left">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link footer_link--logo"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-text-second">
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Подробные условия</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Раскрытие информации</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
         <div class="g-wrapper footer-bottom">
             <div class="g-content">
@@ -455,7 +493,7 @@
     <!-- END FOOTER -->
 
 
-    <!-- Modal Header 1 -->
+    <!-- Modal Header 1 +++ -->
     <div id="send-app" class="modal fade" role="dialog">
         <div class="modal-dialog wide">
 
@@ -466,43 +504,44 @@
                     <button type="button" class="close send-modal-close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action="#">
+                    <form id="send-1" action="" method="POST">
                         <ul class="send-data-list">
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="ФИО*" required>
+                                <input type="text" name="name" class="send-data-input" placeholder="ФИО*" required>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Контактный телефон*" required>
+                                <input type="text" name="phone" class="send-data-input" placeholder="Контактный телефон*"
+                                    required data-mask="+7 (000) 000-00-00">
                             </li>
                             <li class="send-data-item">
-                                <input type="email" class="send-data-input" placeholder="E-MAIL*" required>
+                                <input type="email" name="email" class="send-data-input" placeholder="E-MAIL*" required>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="ИНН*" required>
+                                <input type="text" name="inn" class="send-data-input" placeholder="ИНН*" required>
                             </li>
                         </ul>
                         <ul class="send-data-list clearfix">
                             <li class="send-data-item">
                                 <div class="form-group">
-                                    <select class="form-control" id="sel1">
-                                        <option hidden select>Залог</option>
-                                        <option>Квартира</option>
-                                        <option>Апартаменты</option>
-                                        <option>Дом</option>
-                                        <option>Офис</option>
-                                        <option>Торговая площадь</option>
+                                    <select class="form-control" id="sel1" name="select">
+                                        <option value="" selected disabled hidden>Залог</option>
+                                        <option value="1">Квартира</option>
+                                        <option value="2">Апартаменты</option>
+                                        <option value="3">Дом</option>
+                                        <option value="4">Офис</option>
+                                        <option value="5">Торговая площадь</option>
                                     </select>
                                 </div>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Адрес">
+                                <input type="text" name="address" class="send-data-input" placeholder="Адрес">
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Площадь">
+                                <input type="text" name="square" class="send-data-input" placeholder="Площадь">
                             </li>
 
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ">
+                                <input type="text" name="cost" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ">
                             </li>
                         </ul>
                         <div class="modal-footer center">
@@ -515,7 +554,7 @@
         </div>
     </div>
 
-    <!-- Modal Header 2 -->
+    <!-- Modal Header 2 +++ -->
     <div id="send-app-2" class="modal fade" role="dialog">
         <div class="modal-dialog wide">
 
@@ -526,43 +565,44 @@
                     <button type="button" class="close send-modal-close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action="#">
+                    <form action="" id="send-2" method="POST">
                         <ul class="send-data-list">
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="ФИО*" required>
+                                <input type="text" name="name" class="send-data-input" placeholder="ФИО*" required>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Контактный телефон*" required>
+                                <input type="text" name="phone" class="send-data-input" placeholder="Контактный телефон*"
+                                    required data-mask="+7 (000) 000-00-00">
                             </li>
                             <li class="send-data-item">
-                                <input type="email" class="send-data-input" placeholder="E-MAIL*" required>
+                                <input type="email" name="email" class="send-data-input" placeholder="E-MAIL*" required>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="ИНН*" required>
+                                <input type="text" name="inn" class="send-data-input" placeholder="ИНН*" required>
                             </li>
                         </ul>
                         <ul class="send-data-list clearfix">
                             <li class="send-data-item">
                                 <div class="form-group">
-                                    <select class="form-control" id="sel1">
-                                        <option hidden select>Залог</option>
-                                        <option>Квартира</option>
-                                        <option>Апартаменты</option>
-                                        <option>Дом</option>
-                                        <option>Офис</option>
-                                        <option>Торговая площадь</option>
+                                    <select class="form-control" name="select" id="sel1">
+                                        <option value="" selected disabled hidden>Залог</option>
+                                        <option value="1">Квартира</option>
+                                        <option value="2">Апартаменты</option>
+                                        <option value="3">Дом</option>
+                                        <option value="4">Офис</option>
+                                        <option value="5">Торговая площадь</option>
                                     </select>
                                 </div>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Адрес">
+                                <input type="text" class="send-data-input" name="address" placeholder="Адрес">
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Площадь">
+                                <input type="text" name="square" class="send-data-input" placeholder="Площадь">
                             </li>
 
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ">
+                                <input type="text" name="cost" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ">
                             </li>
                         </ul>
                         <div class="modal-footer center">
@@ -575,7 +615,7 @@
         </div>
     </div>
 
-    <!-- Modal Header 3 -->
+    <!-- Modal Header 3 +++ -->
     <div id="send-app-3" class="modal fade" role="dialog">
         <div class="modal-dialog wide">
 
@@ -586,43 +626,44 @@
                     <button type="button" class="close send-modal-close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action="#">
+                    <form action="" id="send-3" method="POST">
                         <ul class="send-data-list">
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="ФИО*" required>
+                                <input type="text" name="name" class="send-data-input" placeholder="ФИО*" required>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Контактный телефон*" required>
+                                <input type="text" name="phone" class="send-data-input" placeholder="Контактный телефон*"
+                                    required data-mask="+7 (000) 000-00-00">
                             </li>
                             <li class="send-data-item">
-                                <input type="email" class="send-data-input" placeholder="E-MAIL*" required>
+                                <input type="email" name="email" class="send-data-input" placeholder="E-MAIL*" required>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="ИНН*" required>
+                                <input type="text" name="inn" class="send-data-input" placeholder="ИНН*" required>
                             </li>
                         </ul>
                         <ul class="send-data-list clearfix">
                             <li class="send-data-item">
                                 <div class="form-group">
-                                    <select class="form-control" id="sel1">
-                                        <option hidden select>Залог</option>
-                                        <option>Квартира</option>
-                                        <option>Апартаменты</option>
-                                        <option>Дом</option>
-                                        <option>Офис</option>
-                                        <option>Торговая площадь</option>
+                                    <select class="form-control" id="sel1" name="select">
+                                        <option value="" selected disabled hidden>Залог</option>
+                                        <option value="1">Квартира</option>
+                                        <option value="2">Апартаменты</option>
+                                        <option value="3">Дом</option>
+                                        <option value="4">Офис</option>
+                                        <option value="5">Торговая площадь</option>
                                     </select>
                                 </div>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Адрес">
+                                <input type="text" class="send-data-input" placeholder="Адрес" name="address">
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Площадь">
+                                <input type="text" class="send-data-input" placeholder="Площадь" name="square">
                             </li>
 
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ">
+                                <input type="text" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ" name="cost">
                             </li>
                         </ul>
                         <div class="modal-footer center">
@@ -635,7 +676,7 @@
         </div>
     </div>
 
-    <!-- Modal Header 4 -->
+    <!-- Modal Header 4 +++ -->
     <div id="send-app-4" class="modal fade" role="dialog">
         <div class="modal-dialog wide">
 
@@ -646,43 +687,44 @@
                     <button type="button" class="close send-modal-close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action="#">
+                    <form action="" id="send-4" method="POST">
                         <ul class="send-data-list">
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="ФИО*" required>
+                                <input type="text" class="send-data-input" name="name" placeholder="ФИО*" required>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Контактный телефон*" required>
+                                <input type="text" name="phone" class="send-data-input" placeholder="Контактный телефон*"
+                                    required data-mask="+7 (000) 000-00-00">
                             </li>
                             <li class="send-data-item">
-                                <input type="email" class="send-data-input" placeholder="E-MAIL*" required>
+                                <input type="email" name="email" class="send-data-input" placeholder="E-MAIL*" required>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="ИНН*" required>
+                                <input type="text" class="send-data-input" placeholder="ИНН*" name="inn" required>
                             </li>
                         </ul>
                         <ul class="send-data-list clearfix">
                             <li class="send-data-item">
                                 <div class="form-group">
-                                    <select class="form-control" id="sel1">
-                                        <option hidden select>Залог</option>
-                                        <option>Квартира</option>
-                                        <option>Апартаменты</option>
-                                        <option>Дом</option>
-                                        <option>Офис</option>
-                                        <option>Торговая площадь</option>
+                                    <select class="form-control" id="sel1" name="select">
+                                        <option value="" selected disabled hidden>Залог</option>
+                                        <option value="1">Квартира</option>
+                                        <option value="2">Апартаменты</option>
+                                        <option value="3">Дом</option>
+                                        <option value="4">Офис</option>
+                                        <option value="5">Торговая площадь</option>
                                     </select>
                                 </div>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Адрес">
+                                <input type="text" class="send-data-input" placeholder="Адрес" name="address">
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Площадь">
+                                <input type="text" class="send-data-input" placeholder="Площадь" name="square">
                             </li>
 
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ">
+                                <input type="text" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ" name="cost">
                             </li>
                         </ul>
                         <div class="modal-footer center">
@@ -721,43 +763,44 @@
                             <p>рублей в месяц</p>
                         </li>
                     </ul>
-                    <form action="#">
+                    <form action="" id="send-5" method="POST">
                         <ul class="send-data-list">
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="ФИО*" required>
+                                <input type="text" class="send-data-input" placeholder="ФИО*" name="name" required>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Контактный телефон*" required>
+                                <input type="text" class="send-data-input" placeholder="Контактный телефон*" name="phone"
+                                    required data-mask="+7 (000) 000-00-00">
                             </li>
                             <li class="send-data-item">
-                                <input type="email" class="send-data-input" placeholder="E-MAIL*" required>
+                                <input type="email" class="send-data-input" placeholder="E-MAIL*" name="email" required>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="ИНН*" required>
+                                <input type="text" class="send-data-input" placeholder="ИНН*" name="inn" required>
                             </li>
                         </ul>
                         <ul class="send-data-list clearfix">
                             <li class="send-data-item">
                                 <div class="form-group">
                                     <select class="form-control" id="sel1">
-                                        <option hidden select>Залог</option>
-                                        <option>Квартира</option>
-                                        <option>Апартаменты</option>
-                                        <option>Дом</option>
-                                        <option>Офис</option>
-                                        <option>Торговая площадь</option>
+                                        <option value="" selected disabled hidden name="select">Залог</option>
+                                        <option value="1">Квартира</option>
+                                        <option value="2">Апартаменты</option>
+                                        <option value="3">Дом</option>
+                                        <option value="4">Офис</option>
+                                        <option value="5">Торговая площадь</option>
                                     </select>
                                 </div>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Адрес">
+                                <input type="text" class="send-data-input" placeholder="Адрес" name="address">
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Площадь">
+                                <input type="text" class="send-data-input" placeholder="Площадь" name="square">
                             </li>
 
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ">
+                                <input type="text" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ" name="cost">
                             </li>
                         </ul>
                         <div class="modal-footer center">
@@ -783,43 +826,44 @@
                     <button type="button" class="close send-modal-close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action="#">
+                    <form action="" id="send-6" method="POST">
                         <ul class="send-data-list">
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="ФИО*" required>
+                                <input type="text" class="send-data-input" placeholder="ФИО*" name="name" required>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Контактный телефон*" required>
+                                <input type="text" class="send-data-input" placeholder="Контактный телефон*" required
+                                    name="phone" data-mask="+7 (000) 000-00-00">
                             </li>
                             <li class="send-data-item">
-                                <input type="email" class="send-data-input" placeholder="E-MAIL*" required>
+                                <input type="email" class="send-data-input" placeholder="E-MAIL*" name="email" required>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="ИНН*" required>
+                                <input type="text" class="send-data-input" placeholder="ИНН*" name="inn" required>
                             </li>
                         </ul>
                         <ul class="send-data-list clearfix">
                             <li class="send-data-item">
                                 <div class="form-group">
-                                    <select class="form-control" id="sel1">
-                                        <option hidden select>Залог</option>
-                                        <option>Квартира</option>
-                                        <option>Апартаменты</option>
-                                        <option>Дом</option>
-                                        <option>Офис</option>
-                                        <option>Торговая площадь</option>
+                                    <select class="form-control" id="sel1" name="select">
+                                        <option value="" selected disabled hidden>Залог</option>
+                                        <option value="1">Квартира</option>
+                                        <option value="2">Апартаменты</option>
+                                        <option value="3">Дом</option>
+                                        <option value="4">Офис</option>
+                                        <option value="5">Торговая площадь</option>
                                     </select>
                                 </div>
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Адрес">
+                                <input type="text" class="send-data-input" placeholder="Адрес" name="address">
                             </li>
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="Площадь">
+                                <input type="text" class="send-data-input" placeholder="Площадь" name="square">
                             </li>
 
                             <li class="send-data-item">
-                                <input type="text" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ">
+                                <input type="text" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ" name="cost">
                             </li>
                         </ul>
                         <div class="modal-footer center">
@@ -835,6 +879,8 @@
 
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7/dist/sweetalert2.all.min.js"></script>
+    <script src="libs/jquery.mask.min.js"></script>
     <script src="libs/owl.carousel.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
