@@ -1738,6 +1738,14 @@ input[type=range]::-ms-thumb {
     line-height: 1.2;
 }
 
+.modal-footer[data-tooltip]:before {
+    bottom: 120%;
+}
+
+.modal-footer[data-tooltip]:after {
+    bottom: 121%;
+}
+
 [data-tooltip]:after {
     position: absolute;
     bottom: 150%;
