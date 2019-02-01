@@ -30,11 +30,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST['square'])) {$message .= "Площадь: " . $_POST['square'] . "\n\n";}
     if (!empty($_POST['cost'])) {$message .= "Рыночная стоимость: " . $_POST['cost'] . "\n\n";}
 
-
     $to = "business@rusnarbank.ru, smmagic.online@gmail.com";
     $subject = 'Форма Заявки';
-    $headers = 'From: ' $_POST['email'] . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+
+    $headers  = "From: <noreply@rusnarbank.ru> \n";
+    $headers .= 'X-Mailer: PHP/' . phpversion();
 
     $send = mail($to, $subject, $message, $headers);
 

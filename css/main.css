@@ -304,6 +304,10 @@ p.range span:after {
     background: #0a72ba;
 }
 
+.header_text_mobile {
+    display: none;
+}
+
 .header_phone {
     text-decoration: none;
     color: #02024C;
@@ -433,7 +437,7 @@ p.range span:after {
     margin: 0px;
     margin-bottom: 50px;
     font-family: 'Gilroy Semibold';
-    font-size: 48px;
+    font-size: 38px;
 }
 
 .owl-item .slider_item .slider_text {
@@ -637,7 +641,7 @@ p.range span:after {
 .interesting-offer_item {
     position: relative;
     font-family: 'Gotham Pro Regular';
-    font-size: 23px;
+    font-size: 20px;
     line-height: 1.5;
     color: #000000;
 }
@@ -874,6 +878,12 @@ p.range span:after {
     width: 50%;
 }
 
+.requirements_item-btn.active .requirements_btn--link_2 {
+    color: #0a9ad6;
+    border-bottom: 4px solid #0a9ad6;
+    text-decoration: none;
+}
+
 .requirements_list {
     list-style: none;
     width: 100%;
@@ -1002,8 +1012,8 @@ p.range span:after {
 
 .get-lot_text {
     font-family: 'Circe Light';
-    font-size: 23px;
-    line-height: 1.2;
+    font-size: 20px;
+    line-height: 1;
 }
 
 /* END BLOCK-GET-LOT */
@@ -1182,13 +1192,15 @@ p.range span:after {
     max-width: 325px;
     width: 100%;
     font-family: "Circe Light";
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 1;
 }
 
 .credit-calculator_item span {
     display: block;
     font-weight: 600;
     font-size: 33px;
+    margin-bottom: 8px;
 }
 
 /* END BLOCK-CREDIT-CALCUTATOR */
@@ -1243,7 +1255,7 @@ p.range span:after {
 .footer_link {
     text-decoration: none;
     font-family: 'Circe Light';
-    font-size: 24px;
+    font-size: 20px;
     color: #ffffff;
 }
 
@@ -1282,7 +1294,7 @@ p.range span:after {
 }
 
 .address-license_item {
-    padding: 100px 0 110px;
+    padding: 50px 0 60px;
     list-style: none;
 }
 
@@ -1767,4 +1779,9 @@ input[type=range]::-ms-thumb {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
+}
+
+.swal2-popup.swal2-modal {
+    padding: 30px 20px;
+    width: 40em;
 }

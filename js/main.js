@@ -6,7 +6,7 @@ $(document).ready(function () {
 		$(".requirements_btn--link_2").removeClass('requirements_btn--active');
 		$(".requirements_list.link_1--mob").toggleClass('requirements_list--active');
 		$(".requirements_list link_2--mob").removeClass('requirements_list--active');
-		$('[data-toggle="tooltip"]').tooltip(); 
+		$('[data-toggle="tooltip"]').tooltip();
 	});
 	$(".requirements_btn--link_2").click(function () { // элемент клика
 		$(".requirements_btn--link_2").toggleClass('requirements_btn--active');
@@ -102,7 +102,7 @@ function calculate() {
 //  Ajax Contact Form
 
 $(function () {
-	$('#send-1, #send-2, #send-3, #send-4, #send-5, #send-6, #send-7').on('submit', function () {
+	$('#send-1').on('submit', function () {
 		var formID = $(this).attr('id');
 		var formNm = $('#' + formID);
 		$.ajax({
@@ -112,9 +112,105 @@ $(function () {
 			success: function () {
 				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
 				$(".modal").modal('hide');
+				dataLayer.push({ 'event': 'send-1' });
+			}
+		});
+		return false;
+	});
+
+	$('#send-2').on('submit', function () {
+		var formID = $(this).attr('id');
+		var formNm = $('#' + formID);
+		$.ajax({
+			type: 'post',
+			url: 'mail/contact.php',
+			data: $(this).serialize(),
+			success: function () {
+				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
+				$(".modal").modal('hide');
+				dataLayer.push({ 'event': 'send-2' });
+			}
+		});
+		return false;
+	});
+
+	$('#send-3').on('submit', function () {
+		var formID = $(this).attr('id');
+		var formNm = $('#' + formID);
+		$.ajax({
+			type: 'post',
+			url: 'mail/contact.php',
+			data: $(this).serialize(),
+			success: function () {
+				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
+				$(".modal").modal('hide');
+				dataLayer.push({ 'event': 'send-3' });
+			}
+		});
+		return false;
+	});
+
+	$('#send-4').on('submit', function () {
+		var formID = $(this).attr('id');
+		var formNm = $('#' + formID);
+		$.ajax({
+			type: 'post',
+			url: 'mail/contact.php',
+			data: $(this).serialize(),
+			success: function () {
+				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
+				$(".modal").modal('hide');
+				dataLayer.push({ 'event': 'send-4' });
+			}
+		});
+		return false;
+	});
+
+	$('#send-5').on('submit', function () {
+		var formID = $(this).attr('id');
+		var formNm = $('#' + formID);
+		$.ajax({
+			type: 'post',
+			url: 'mail/contact.php',
+			data: $(this).serialize(),
+			success: function () {
+				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
+				$(".modal").modal('hide');
+				dataLayer.push({ 'event': 'send-5' });
+			}
+		});
+		return false;
+	});
+
+	$('#send-6').on('submit', function () {
+		var formID = $(this).attr('id');
+		var formNm = $('#' + formID);
+		$.ajax({
+			type: 'post',
+			url: 'mail/contact.php',
+			data: $(this).serialize(),
+			success: function () {
+				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
+				$(".modal").modal('hide');
+				dataLayer.push({ 'event': 'send-6' });
+			}
+		});
+		return false;
+	});
+
+	$('#send-7').on('submit', function () {
+		var formID = $(this).attr('id');
+		var formNm = $('#' + formID);
+		$.ajax({
+			type: 'post',
+			url: 'mail/contact.php',
+			data: $(this).serialize(),
+			success: function () {
+				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
+				$(".modal").modal('hide');
+				dataLayer.push({ 'event': 'send-7' });
 			}
 		});
 		return false;
 	});
 });
-
