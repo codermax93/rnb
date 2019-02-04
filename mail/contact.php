@@ -33,7 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "business@rusnarbank.ru, smmagic.online@gmail.com";
     $subject = 'Форма Заявки';
 
-    $headers  = "From: <noreply@rusnarbank.ru> \n";
+    $headers  = "From: noreply@rusnarbank.ru\r\n";
+    $headers .= "Content-type: text/html; charset=UTF-8\r\n";
     $headers .= 'X-Mailer: PHP/' . phpversion();
 
     $send = mail($to, $subject, $message, $headers);
