@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
 
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126041159-1"></script>
     <script>
@@ -36,6 +37,8 @@
 </head>
 
 <body>
+
+    <a href="#" data-toggle="modal" data-target="#send-float" class="agent-float">Агентам</a>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N52MQ6T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -561,8 +564,8 @@
                                 <input type="text" name="cost" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ">
                             </li>
                         </ul>
-                        <div class="modal-footer center">
-                            <button type="submit" class="btn btn-default modal-dialog-btn">Одобрить</button>
+                        <div class="modal-footer wrap center clearfix">
+                            <input type="submit" class="btn btn-default modal-dialog-btn" value="Одобрить">
                         </div>
                     </form>
                 </div>
@@ -623,9 +626,9 @@
                                 <input type="text" name="cost" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ">
                             </li>
                         </ul>
-                        <div class="modal-footer center">
-                            <button type="submit" class="btn btn-default modal-dialog-btn">Одобрить</button>
-                        </div>
+                        <div class="modal-footer wrap center clearfix">
+                                <input type="submit" class="btn btn-default modal-dialog-btn" value="Одобрить">
+                            </div>
                     </form>
                 </div>
             </div>
@@ -684,9 +687,9 @@
                                 <input type="text" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ" name="cost">
                             </li>
                         </ul>
-                        <div class="modal-footer center">
-                            <button type="submit" class="btn btn-default modal-dialog-btn">Одобрить</button>
-                        </div>
+                        <div class="modal-footer wrap center clearfix">
+                                <input type="submit" class="btn btn-default modal-dialog-btn" value="Одобрить">
+                            </div>
                     </form>
                 </div>
             </div>
@@ -745,9 +748,9 @@
                                 <input type="text" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ" name="cost">
                             </li>
                         </ul>
-                        <div class="modal-footer center">
-                            <button type="submit" class="btn btn-default modal-dialog-btn">Одобрить</button>
-                        </div>
+                        <div class="modal-footer wrap center clearfix">
+                                <input type="submit" class="btn btn-default modal-dialog-btn" value="Одобрить">
+                            </div>
                     </form>
                 </div>
             </div>
@@ -825,9 +828,9 @@
                             </ul>
                         </div>
 
-                        <div class="modal-footer center" data-tooltip="Мы сами соберем все данные из открытых источников">
-                            <button type="submit" class="btn btn-default modal-dialog-btn">Одобрить</button>
-                        </div>
+                        <div class="modal-footer wrap center clearfix">
+                                <input type="submit" class="btn btn-default modal-dialog-btn" value="Одобрить">
+                            </div>
                     </form>
 
                 </div>
@@ -888,15 +891,48 @@
                                 <input type="text" class="send-data-input" placeholder="РЫНОЧНАЯ СТОИМОСТЬ" name="cost">
                             </li>
                         </ul>
-                        <div class="modal-footer center">
-                            <button type="submit" class="btn btn-default modal-dialog-btn">Одобрить</button>
-                        </div>
+                        <div class="modal-footer wrap center clearfix">
+                                <input type="submit" class="btn btn-default modal-dialog-btn" value="Одобрить">
+                            </div>
                     </form>
                 </div>
             </div>
 
         </div>
     </div>
+
+
+        <!-- Float Send  -->
+        <div id="send-float" class="modal fade right send-float" role="dialog">
+                <div class="modal-dialog wide">
+        
+                    <!-- Modal content-->
+                    <div class="modal-content send-modal-content">
+                        <div class="modal-body modal-float-body">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-12">
+                                        <div class="send-wrap">
+                                            <p class="send-modal-title ">Заполните форму и получите наше
+                                                спецпредложение для партнеров</p>
+                                            <button type="button" class="close send-modal-close send-float-close" data-dismiss="modal">&times;</button>
+                                            <form action="#" id="send-float-form">
+                                                <input type="text" class="send-float-input" name="name" placeholder="Имя" required>
+                                                <input type="email" class="send-float-input" name="email" placeholder="E-mail" required>
+                                                <input type="text" class="send-float-input" name="phone" placeholder="Контактный телефон" required data-mask="+7 (000) 000-00-00">
+                                                <input type="submit" class="send-float-submit" value="Отправить">
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-hidden">
+                                        <button type="button" class="close send-modal-close send-float-close" data-dismiss="modal">&times;</button>
+                                        <img src="img/handshake.jpg" alt="handshake" class="send-float-image">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
 
 
     <!-- SCRIPTS -->

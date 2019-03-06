@@ -30,7 +30,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST['square'])) {$message .= "Площадь: " . $_POST['square'] . "\n\n";}
     if (!empty($_POST['cost'])) {$message .= "Рыночная стоимость: " . $_POST['cost'] . "\n\n";}
 
-    $to = "business@rusnarbank.ru, smmagic.online@gmail.com";
+    $utm_source = htmlspecialchars($_POST['utm_source']);
+    $utm_medium = htmlspecialchars($_POST['utm_medium']);
+    $utm_campaign = htmlspecialchars($_POST['utm_campaign']);
+    $utm_content = htmlspecialchars($_POST['utm_content']);
+    $utm_term = htmlspecialchars($_POST['utm_term']);
+    
+    $message .= "<strong>UTM Source: </strong> $utm_source <br />";
+    $message .= "<strong>UTM Medium: </strong> $utm_medium <br />";
+    $message .= "<strong>UTM Campaign: </strong> $utm_campaign <br />";
+    $message .= "<strong>UTM Content: </strong> $utm_content <br />";
+    $message .= "<strong>UTM Term: </strong> $utm_term <br />";
+
+
+    $to = "d.kutenkova@rusnarbank.ru, p.gorbatsevich@rusnarbank.ru, a.grachev@rusnarbank.ru, smmagic.online@gmail.com";
     $subject = 'Форма Заявки';
 
     $headers  = "From: noreply@rusnarbank.ru\r\n";

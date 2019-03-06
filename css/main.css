@@ -1359,6 +1359,7 @@ input[type=range]::-ms-thumb {
     color: #0a9ad6;
     border-radius: 0;
     border: 1px solid #0a9ad6;
+    margin: 0 10px;
 }
 
 .modal-dialog-btn:hover {
@@ -1640,7 +1641,7 @@ input[type=range]::-ms-thumb {
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-top: 20px;
+    margin: 20px 0;
     cursor: pointer;
     color: #000002;
     font-family: 'Circe Extra Light';
@@ -1784,4 +1785,125 @@ input[type=range]::-ms-thumb {
 .swal2-popup.swal2-modal {
     padding: 30px 20px;
     width: 40em;
+}
+
+.modal-footer.wrap {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.g-recaptcha {
+    margin: 0 10px;
+}
+
+.consult-recaptcha {
+    width: 100%;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+}
+
+.consult-recaptcha .g-recaptcha {
+    margin: 0;
+}
+
+.agent-float {
+    position: fixed;
+    top: 40%;
+    right: -40px;
+    z-index: 1000;
+    background: #0a9ad6;
+    color: #fff;
+    padding: 20px 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: translateZ(0) rotate(-90deg);
+    font-family: 'Circe Regular';
+    font-size: 23px;
+}
+
+.agent-float:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.agent-float:focus {
+    outline: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.send-float .send-modal-title {
+    font-family: 'Gilroy Semibold';
+    font-size: 30px;
+    text-align: left;
+    padding: 45px 0 0 0;
+}
+
+.send-float .modal-content {
+    padding: 0;
+}
+
+.send-float-image {
+    max-width: 100%;
+    margin-left: 1px;
+}
+
+.modal-float-body {
+    padding: 0;
+}
+
+.send-float-close {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    right: 20px;
+}
+
+.send-float-close:hover {
+    color: #fff;
+}
+
+.send-wrap {
+    margin: 0 15%;
+}
+
+.send-float-input {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+    border: none;
+    border-bottom: 1px solid #a4a7b7;
+    color: #878a8f;
+    text-transform: uppercase;
+    font-family: 'Circe Light';
+}
+
+.send-float-submit {
+    max-width: 230px;
+    float: left;
+    height: 60px;
+    color: #0a9ad6;
+    border:2px solid #0a9ad6;
+    line-height: 60px;
+    text-transform: uppercase;
+    background: #fff;
+    padding: 0 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.modal.fade:not(.in).right .modal-dialog {
+    -webkit-transform:  translate3d(25%, 0, 0);
+    transform:  translate3d(25%, 0, 0);
 }

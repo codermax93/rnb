@@ -1,3 +1,19 @@
+var url = new URL(window.location.href);
+  var utms = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+  var forms = $('form');
+  forms.each(function(f){
+    var f = $(this)
+    if (f.find('input[name^=utm]').length == 0) {
+      utms.forEach(function(utm_name){
+        var utm_value = url.searchParams.get(utm_name);
+        if (utm_value) {
+          var utm = $('<input name="'+utm_name+'" type="hidden" value="'+utm_value+'">');
+          f.append(utm);
+        }
+      })
+    }
+  });
+
 var range_2_val = 500000, range_3_val = 36
 
 $(document).ready(function () {
@@ -113,6 +129,9 @@ $(function () {
 				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
 				$(".modal").modal('hide');
 				dataLayer.push({ 'event': 'send-1' });
+			},
+			error: function() {
+				swal("Что-то пошло не так", "Повторите еще раз", "error");
 			}
 		});
 		return false;
@@ -129,6 +148,9 @@ $(function () {
 				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
 				$(".modal").modal('hide');
 				dataLayer.push({ 'event': 'send-2' });
+			},
+			error: function() {
+				swal("Что-то пошло не так", "Повторите еще раз", "error");
 			}
 		});
 		return false;
@@ -145,6 +167,9 @@ $(function () {
 				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
 				$(".modal").modal('hide');
 				dataLayer.push({ 'event': 'send-3' });
+			},
+			error: function() {
+				swal("Что-то пошло не так", "Повторите еще раз", "error");
 			}
 		});
 		return false;
@@ -161,6 +186,9 @@ $(function () {
 				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
 				$(".modal").modal('hide');
 				dataLayer.push({ 'event': 'send-4' });
+			},
+			error: function() {
+				swal("Что-то пошло не так", "Повторите еще раз", "error");
 			}
 		});
 		return false;
@@ -177,6 +205,9 @@ $(function () {
 				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
 				$(".modal").modal('hide');
 				dataLayer.push({ 'event': 'send-5' });
+			},
+			error: function() {
+				swal("Что-то пошло не так", "Повторите еще раз", "error");
 			}
 		});
 		return false;
@@ -193,6 +224,9 @@ $(function () {
 				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
 				$(".modal").modal('hide');
 				dataLayer.push({ 'event': 'send-6' });
+			},
+			error: function() {
+				swal("Что-то пошло не так", "Повторите еще раз", "error");
 			}
 		});
 		return false;
@@ -209,6 +243,30 @@ $(function () {
 				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
 				$(".modal").modal('hide');
 				dataLayer.push({ 'event': 'send-7' });
+			},
+			error: function() {
+				swal("Что-то пошло не так", "Повторите еще раз", "error");
+			}
+		});
+		return false;
+	});
+
+
+	
+	$('#send-float-form').on('submit', function () {
+		var formID = $(this).attr('id');
+		var formNm = $('#' + formID);
+		$.ajax({
+			type: 'post',
+			url: 'mail/contact.php',
+			data: $(this).serialize(),
+			success: function () {
+				swal("Спасибо за ваш интерес, мы с вами свяжемся в ближайшее время!");
+				$(".modal").modal('hide');
+				dataLayer.push({ 'event': 'send-2' });
+			},
+			error: function() {
+				swal("Что-то пошло не так", "Повторите еще раз", "error");
 			}
 		});
 		return false;
